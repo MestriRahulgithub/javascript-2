@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fetch-API</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<style>
+    .navbar {
+        background-color: rgb(105, 202, 194);
+        overflow: hidden;
+        text-align: center;
+    }
+
+    .navbar a {
+        display: inline-block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        margin-left: auto;
+        margin-right: auto;
+        text-decoration: none;
+    }
+
+    .navbar a:hover {
+        background-color: #ddd;
+        color: black;
+    }
+
+    body {
+        font-family: 'Arial', sans-serif;
+        background-color: #f8f9fa;
+        color: #212529;
+        margin: 0;
+    }
+
+    .container {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    .card {
+        border: 1px solid #dee2e6;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        margin-bottom: 20px;
+        transition: box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    .card-body {
+        padding: 20px;
+    }
+
+    .card-title {
+        font-size: 1.25rem;
+        margin-bottom: 10px;
+    }
+
+    .card-text {
+        font-size: 1rem;
+    }
+
+    .card img {
+        width: 100%;
+
+        height: 200px;
+
+        object-fit: cover;
+
+        border-radius: 8px 8px 0 0;
+    }
+</style>
+
+<body>
+
+    <div class="navbar">
+        <a href="#">Home</a>
+        <a href="index.html">Login</a>
+        <a href="register.html">Register</a>
+    </div>
+
+    <div class="container">
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+
+            <div class="col">
+                <div class="card">
+                    <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcTzXwNivrgwzDwexTvwc9zJuafTjXiT3mKOQQqpu-S6jcKgiU4xLV3RXXR0WZjCwvdUSIOPHYbrFDwkBx1HE_J70J4mfFgwXlb8QMkBZ9Y&usqp=CAE"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">HTML</h5>
+                        <p class="card-text">HTML, or HyperText Markup Language, is the standard markup language</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcSqrI2nYins4NY7Fsk16oVijLgpCIUP9HFlxTTIqsuVHdHOV_NiL1zt8glmMi2rknsbNq1-bsu3ctZqRfYFWNEd8UiWdYzVuYJ8W0b1yxiQZP8oqbjksK_a&usqp=CAE"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">CSS</h5>
+                        <p class="card-text">CSS, or Cascading Style Sheets, is a style sheet language used to describe
+                            the presentation and formatting of a document written in HTML or XML. CSS plays a crucial
+                            role in web development by allowing developers to control the layout, appearance, and visual
+                            styling of web pages. </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcRlx5qGQMX3PxiEk95cq0_CZqy_OJAS5sMymyNkEb65Fez0RNzRC-7AubSZmbF-pM_4JK44ZuExC1PN_3uN0gjcnxNReqX31eTouwqxRE4&usqp=CAE"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">BOOTSTRAP</h5>
+                        <p class="card-text">
+                            Bootstrap is a popular open-source front-end framework developed by Twitter.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcQNbaNvJxiHzOSa9IVw_Y777sD8TV-qmzr30cM1BoF3r-3cqfOKBmIY23sMsEIc2ZEK72jHiaMYO7TslKK8TWhP9tqxZGnlPfagLZIWBPAZN85ygyQvVOtU&usqp=CAE"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">JAVASCRIPT</h5>
+                        <p class="card-text">
+                            JavaScript is a versatile, high-level programming language primarily used for building
+                            interactive and dynamic web pages. It is a crucial component of web development, enabling
+                            client-side scripting to enhance user experience and interactivity.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcQtZP_94Xu9uOAuSrFkqiFfkIEt_k8Btpl8BUqDaLvXwS-CrJ9104ghaHnVcwBq0JNrH0K8ctxo2P8dZTxdk92TXAkMJASpkdmKaXsjjUW6&usqp=CAE"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">REACT JS</h5>
+                        <p class="card-text">React.js, commonly referred to as React, is an open-source JavaScript
+                            library for building </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcRoO_CegOhtgFCiMyn3aqJD9yOxffIdfEb09Yvc6PF8DIyDpjqykDRDApaOOZbEl0FErbpb-M9NditLItm-f4QPx3vteGp57MFD-CeJ1PTqZybGfeZOz7L3aw&usqp=CAE"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">ANGULAR</h5>
+                        <p class="card-text">Angular is a popular open-source web application framework developed and
+                            maintained by Google.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
